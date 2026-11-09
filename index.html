@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Zaman — Lecturer &amp; AI Researcher</title>
+<meta name="description" content="Academic portfolio of Muhammad Zaman — Lecturer and AI researcher in deep learning, computer vision and medical imaging. Publications, citation metrics, CV and verified appointments.">
+<meta property="og:title" content="Muhammad Zaman — Lecturer & AI Researcher">
+<meta property="og:description" content="Deep learning, computer vision and medical imaging research. 25 peer-reviewed papers · 202 citations · h-index 8.">
+<link rel="icon" href="assets/img/headshot.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#0b0b0c;--ink2:#161618;--paper:#f7f5f0;--line:#e2ddd2;--dline:#2a2a2e;--red:#b80d0d;--red2:#e0201b;--txt:#1c1c1e;--mut:#6b6862;--light:#f4f4f5;--lmut:#a1a1aa}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth;overflow-x:clip}
+body{font-family:Inter,system-ui,sans-serif;background:var(--paper);color:var(--txt);line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:clip}
+h1,h2,h3,.serif{font-family:Newsreader,Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}::selection{background:var(--red);color:#fff}
+img{display:block;max-width:100%}
+.layout{display:grid;grid-template-columns:330px 1fr;min-height:100vh}
+/* ---------- sidebar ---------- */
+aside{background:var(--ink);color:var(--light);position:sticky;top:0;height:100vh;overflow-y:auto;padding:38px 32px 30px;display:flex;flex-direction:column;scrollbar-width:none}
+aside::-webkit-scrollbar{display:none}
+aside::before{content:"";position:absolute;top:0;left:0;right:0;height:4px;background:var(--red2)}
+.photo{width:112px;height:112px;border-radius:50%;position:relative;margin-bottom:20px;flex-shrink:0}
+.photo img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 20%;border:3px solid var(--ink2);filter:grayscale(.15) contrast(1.05)}
+.photo::after{content:"";position:absolute;inset:-6px;border-radius:50%;border:1px solid var(--red2);animation:ring 3.2s ease-out infinite}
+@keyframes ring{0%{transform:scale(.96);opacity:.8}100%{transform:scale(1.14);opacity:0}}
+aside h1{font-size:1.95rem;line-height:1.12;font-weight:600;color:#fff}
+aside .role{color:var(--red2);font-weight:600;font-size:.86rem;margin:6px 0 4px}
+aside .aff{color:var(--lmut);font-size:.86rem;line-height:1.5}
+.sbtn{margin-top:20px;display:flex;align-items:center;justify-content:center;gap:8px;background:var(--red2);color:#fff;border-radius:8px;padding:11px 14px;font-weight:600;font-size:.88rem;transition:.25s}
+.sbtn:hover{background:#c71610}
+.sbtn svg,.btn svg,.dbtn svg{width:16px;height:16px}
+.snav{margin:26px 0;display:grid;gap:1px}
+.snav a{display:flex;align-items:center;gap:12px;padding:8px 12px;border-radius:7px;font-size:.9rem;color:var(--lmut);transition:.2s}
+.snav a span{font-size:.7rem;color:#52525b;font-weight:600;width:18px}
+.snav a:hover,.snav a.on{color:#fff;background:var(--ink2)}.snav a.on span{color:var(--red2)}
+.slinks{margin-top:auto;display:grid;gap:4px;font-size:.84rem}
+.slinks a{display:flex;justify-content:space-between;color:var(--lmut);padding:6px 0;border-bottom:1px solid var(--dline);transition:.2s}
+.slinks a:hover{color:#fff}.slinks a::after{content:"↗";color:var(--red2)}
+.smail{margin-top:16px;font-size:.82rem;color:var(--lmut)}.smail b{color:#fff;font-weight:500;display:block;word-break:break-all}
+/* ---------- hero ---------- */
+main{min-width:0}
+.top{background:var(--ink);color:var(--light);padding:72px clamp(24px,5vw,72px) 60px;position:relative;overflow:hidden}
+.top canvas{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+.hero{position:relative;display:grid;grid-template-columns:1fr 300px;gap:50px;align-items:center;max-width:1060px}
+.kick{font-size:.76rem;letter-spacing:.18em;text-transform:uppercase;color:var(--red2);font-weight:700}
+.top h2{font-size:clamp(2.1rem,4.2vw,3.4rem);line-height:1.12;margin:16px 0 18px;color:#fff}
+.top h2 em{color:var(--red2);font-style:italic}
+.top p{color:#c4c4c8;font-size:1.06rem;max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:7px;font-weight:600;font-size:.9rem;transition:.25s;border:1px solid transparent;cursor:pointer;font-family:inherit}
+.btn-r{background:var(--red2);color:#fff}.btn-r:hover{background:#c71610;transform:translateY(-1px)}
+.btn-l{border-color:#3f3f46;color:#fff}.btn-l:hover{border-color:#fff}
+.portrait{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#2b2d31;box-shadow:0 30px 60px -20px rgba(0,0,0,.8)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 15%;transform:scale(1.04);transition:transform 1.4s cubic-bezier(.2,.7,.2,1)}
+.loaded .portrait img{transform:none}
+.portrait::before{content:"";position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--red2);z-index:1}
+.portrait figcaption{position:absolute;left:12px;right:12px;bottom:12px;background:rgba(11,11,12,.82);backdrop-filter:blur(8px);border-radius:9px;padding:10px 14px;font-size:.78rem;color:var(--lmut)}
+.portrait figcaption b{display:block;color:#fff;font-size:.9rem}
+.statrow{position:relative;display:grid;grid-template-columns:repeat(4,1fr);margin-top:50px;border-top:1px solid var(--dline);max-width:1060px}
+.statrow div{padding:20px 0 0}
+.statrow b{font:500 2.5rem/1 Newsreader,Georgia,serif;color:#fff;display:block}
+.statrow span{font-size:.78rem;color:var(--lmut)}
+/* ---------- content ---------- */
+.content{padding:0 clamp(24px,5vw,72px)}
+section{padding:76px 0;border-bottom:1px solid var(--line);max-width:1000px;scroll-margin-top:16px}
+.sh{display:flex;align-items:baseline;gap:16px;margin-bottom:30px;flex-wrap:wrap}
+.sh .no{font:600 .8rem Inter,sans-serif;color:var(--red)}
+.sh h3{font-size:clamp(1.9rem,3.2vw,2.5rem)}
+.sh p{flex-basis:100%;color:var(--mut);font-size:.95rem;margin-top:-4px}
+.prose p{font-size:1.05rem;margin-bottom:16px;color:#2c2b29}
+.prose p:first-child::first-letter{font:600 3.5rem/.9 Newsreader,Georgia,serif;float:left;margin:6px 10px 0 0;color:var(--red)}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px}
+.chips span{border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;font-size:.83rem;color:#3a3936}
+/* impact */
+.impact{display:grid;grid-template-columns:1fr 1.1fr;gap:20px}
+.panel{background:#fff;border:1px solid var(--line);border-radius:12px;padding:26px}
+.panel h4{font:600 .78rem Inter,sans-serif;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:14px;display:flex;justify-content:space-between;gap:10px}
+.ctable{width:100%;border-collapse:collapse;font-size:.98rem}
+.ctable th{font-weight:500;color:var(--mut);text-align:right;padding:8px 0;border-bottom:1px solid var(--line);font-size:.84rem}
+.ctable th:first-child{text-align:left}
+.ctable td{padding:12px 0;border-bottom:1px solid var(--line);text-align:right;font:500 1.5rem Newsreader,Georgia,serif}
+.ctable td:first-child{text-align:left;font:500 .95rem Inter,sans-serif}
+.ctable tr:last-child td{border:0}
+.chart{display:flex;align-items:flex-end;gap:28px;height:170px;padding:0 10px;border-bottom:1px solid var(--line);position:relative}
+.chart::before{content:"";position:absolute;inset:0 0 auto 0;height:100%;background:repeating-linear-gradient(to top,transparent 0 41px,#eee9df 41px 42px);z-index:0}
+.bar{flex:1;max-width:70px;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;height:100%;position:relative;z-index:1}
+.bar i{width:100%;height:0;background:linear-gradient(180deg,var(--red2),var(--red));border-radius:4px 4px 0 0;transition:height 1.2s cubic-bezier(.2,.8,.2,1)}
+.bars-x{display:flex;gap:28px;padding:6px 10px 0}.bars-x span{flex:1;max-width:70px;text-align:center;font-size:.8rem;color:var(--mut)}
+.src{font-size:.78rem;color:var(--mut);margin-top:14px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.src a{color:var(--red);font-weight:600}
+/* research */
+.areas{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.area{background:var(--paper);padding:26px;transition:.3s;position:relative}
+.area:hover{background:#fff}
+.area .n{font:500 .8rem Inter,sans-serif;color:var(--red)}
+.area h4{font:500 1.32rem Newsreader,Georgia,serif;margin:6px 0 8px}
+.area p{color:var(--mut);font-size:.92rem}
+.area::after{content:"";position:absolute;left:0;bottom:0;height:2px;width:0;background:var(--red);transition:.4s}
+.area:hover::after{width:100%}
+/* publications */
+.ptools{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px;align-items:center}
+.tab{border:1px solid var(--line);background:#fff;color:var(--mut);font:500 .83rem Inter,sans-serif;padding:8px 15px;border-radius:999px;cursor:pointer;transition:.2s}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}.tab:not(.on):hover{border-color:var(--txt);color:var(--txt)}
+.ptools input{flex:1;min-width:180px;border:1px solid var(--line);background:#fff;border-radius:999px;padding:9px 16px;font:inherit;font-size:.88rem;outline:0}
+.ptools input:focus{border-color:var(--txt)}
+.ygroup{display:grid;grid-template-columns:90px 1fr;gap:20px;padding:22px 0;border-top:1px solid var(--line)}
+.ygroup>h4{font:500 2rem/1 Newsreader,Georgia,serif;color:var(--red)}
+.pi{padding:12px 0 12px 18px;border-left:2px solid var(--line);margin-bottom:6px;transition:border-color .25s,background .25s}
+.pi:hover{border-color:var(--red);background:linear-gradient(90deg,#fff,transparent)}
+.pi h5{font:500 1.1rem/1.4 Newsreader,Georgia,serif}
+.pi .meta{font-size:.84rem;color:var(--mut);margin-top:4px;display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+.pi .meta i{font-style:italic}
+.qb{font-size:.68rem;font-weight:700;letter-spacing:.04em;padding:2px 8px;border-radius:4px;border:1px solid var(--line);color:var(--mut);font-style:normal}
+.qb.q1{background:var(--red);border-color:var(--red);color:#fff}
+.empty{color:var(--mut);padding:20px 0}
+/* experience */
+.cvi{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--line)}
+.cvi time{font-size:.85rem;color:var(--mut);font-weight:500}
+.cvi h5{font:500 1.25rem Newsreader,Georgia,serif}.cvi h6{font-size:.9rem;color:var(--red);font-weight:600;margin:2px 0 6px}
+.cvi p{color:var(--mut);font-size:.93rem}
+.sub{font:600 .78rem Inter,sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--mut);margin:34px 0 4px}
+.sub:first-child{margin-top:0}
+/* documents */
+.cvcard{display:grid;grid-template-columns:120px 1fr auto;gap:24px;align-items:center;background:var(--ink);color:var(--light);border-radius:14px;padding:22px;margin-bottom:22px;position:relative;overflow:hidden}
+.cvcard::after{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(224,32,27,.35),transparent 70%)}
+.cvcard img{border-radius:6px;border:1px solid var(--dline);background:#fff}
+.cvcard h4{font:500 1.5rem Newsreader,Georgia,serif;color:#fff}
+.cvcard p{color:var(--lmut);font-size:.9rem;margin-top:4px}
+.cvcard .acts{display:flex;gap:8px;flex-wrap:wrap;position:relative;z-index:1}
+.docs{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
+.doc{display:grid;grid-template-columns:86px 1fr;gap:16px;background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;transition:.25s}
+.doc:hover{border-color:#cfc8b9;box-shadow:0 12px 30px -18px rgba(0,0,0,.35);transform:translateY(-2px)}
+.doc .th{border:1px solid var(--line);border-radius:5px;overflow:hidden;background:#fafafa;aspect-ratio:3/4;align-self:start}
+.doc .th img{width:100%;height:100%;object-fit:cover;object-position:top}
+.doc .k{font-size:.68rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+.doc h5{font:500 1.08rem/1.3 Newsreader,Georgia,serif;margin:3px 0 4px}
+.doc small{display:block;color:var(--mut);font-size:.8rem;line-height:1.45}
+.doc .acts{display:flex;gap:6px;margin-top:10px;flex-wrap:wrap}
+.dbtn{display:inline-flex;align-items:center;gap:6px;font:600 .78rem Inter,sans-serif;padding:6px 11px;border-radius:6px;border:1px solid var(--line);color:var(--txt);transition:.2s;background:#fff}
+.dbtn:hover{border-color:var(--txt)}
+.dbtn.dl{background:var(--ink);color:#fff;border-color:var(--ink)}.dbtn.dl:hover{background:var(--red)}
+.cvcard .dbtn{background:transparent;color:#fff;border-color:#3f3f46;padding:10px 16px;font-size:.86rem}.cvcard .dbtn:hover{border-color:#fff}
+.cvcard .dbtn.dl{background:var(--red2);border-color:var(--red2)}.cvcard .dbtn.dl:hover{background:#c71610}
+.note{font-size:.8rem;color:var(--mut);margin-top:16px}
+/* teaching */
+.tgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-bottom:28px}
+.tbox{background:#fff;border:1px solid var(--line);border-radius:10px;padding:20px}
+.tbox b{font:500 2.4rem/1 Newsreader,Georgia,serif;color:var(--red)}.tbox span{display:block;font-size:.84rem;color:var(--mut);margin-top:6px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.two h4{font:500 1.25rem Newsreader,Georgia,serif;margin-bottom:10px}
+.ul{list-style:none}.ul li{padding:7px 0;border-bottom:1px dashed var(--line);font-size:.91rem;color:#3a3936}
+/* contact */
+.cbox{background:var(--ink);color:var(--light);border-radius:14px;padding:clamp(28px,5vw,50px);display:grid;grid-template-columns:1fr 200px;gap:30px;align-items:center;position:relative;overflow:hidden}
+.cbox::after{content:"";position:absolute;right:-80px;top:-80px;width:260px;height:260px;border-radius:50%;background:radial-gradient(circle,rgba(224,32,27,.35),transparent 70%)}
+.cbox h3{font-size:clamp(1.7rem,3.2vw,2.4rem);color:#fff;position:relative}
+.cbox p{color:var(--lmut);margin:10px 0 22px;position:relative}
+.crow{display:flex;flex-wrap:wrap;gap:10px;position:relative}
+.crow .item{display:flex;align-items:center;gap:12px;border:1px solid var(--dline);border-radius:8px;padding:9px 10px 9px 14px;font-size:.9rem}
+.copy{border:0;background:var(--ink2);color:#fff;font:600 .74rem Inter,sans-serif;padding:6px 10px;border-radius:5px;cursor:pointer}
+.copy:hover{background:var(--red2)}
+.cbox .bw{position:relative;z-index:1;border-radius:50%;overflow:hidden;aspect-ratio:1;border:3px solid var(--dline)}
+.cbox .bw img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+footer{padding:28px 0 40px;color:var(--mut);font-size:.83rem;max-width:1000px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .8s ease,transform .8s ease}.js .rv.in{opacity:1;transform:none}
+.mtop{display:none}
+/* ---------- responsive ---------- */
+@media(max-width:1180px){.hero{grid-template-columns:1fr 240px;gap:34px}}
+@media(max-width:1020px){.layout{grid-template-columns:1fr}aside{position:relative;height:auto;padding:24px 22px 22px}.snav,.slinks,.smail{display:none}aside .head{display:flex;gap:16px;align-items:center}.photo{width:72px;height:72px;margin:0}aside h1{font-size:1.45rem}.sbtn{display:none}
+ .mtop{display:flex;gap:4px;overflow-x:auto;position:sticky;top:0;z-index:30;background:var(--ink);padding:9px 16px;border-top:1px solid var(--dline);scrollbar-width:none}.mtop::-webkit-scrollbar{display:none}
+ .mtop a{white-space:nowrap;color:var(--lmut);font-size:.84rem;padding:7px 12px;border-radius:6px}.mtop a.on{background:var(--red2);color:#fff}}
+@media(max-width:760px){.hero{grid-template-columns:1fr}.portrait{max-width:280px;order:-1;aspect-ratio:4/5}.impact,.docs,.two{grid-template-columns:1fr}.cbox{grid-template-columns:1fr}.cbox .bw{display:none}}
+@media(max-width:640px){.statrow{grid-template-columns:1fr 1fr}.areas{grid-template-columns:1fr}.ygroup,.cvi{grid-template-columns:1fr;gap:8px}.tgrid{grid-template-columns:1fr}.top{padding:44px 20px 44px}section{padding:56px 0}.cvcard{grid-template-columns:80px 1fr}.cvcard .acts{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}.js .rv{opacity:1;transform:none}}
+@media print{aside,.mtop,canvas,.actions,.acts,.ptools{display:none!important}.layout{display:block}.top{background:#fff;color:#000}.top h2,.statrow b{color:#000}}
+</style>
+</head>
+<body>
+<div class="layout">
+<aside>
+  <div class="head"><div class="photo"><img src="assets/img/headshot.jpg" alt="Muhammad Zaman" width="112" height="112"></div>
+  <div><h1>Muhammad Zaman</h1><div class="role">Lecturer · AI Researcher</div><div class="aff">Dept. of Computer Science &amp; IT<br>Superior University, Sargodha Campus</div></div></div>
+  <a class="sbtn" href="docs/Muhammad_Zaman_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a>
+  <nav class="snav" id="snav"><a href="#about"><span>01</span>About</a><a href="#impact"><span>02</span>Research impact</a><a href="#research"><span>03</span>Research</a><a href="#publications"><span>04</span>Publications</a><a href="#cv"><span>05</span>Experience &amp; education</a><a href="#documents"><span>06</span>CV &amp; documents</a><a href="#teaching"><span>07</span>Teaching &amp; service</a><a href="#contact"><span>08</span>Contact</a></nav>
+  <div class="slinks" id="slinks"></div>
+  <div class="smail">Email<b id="smail"></b></div>
+</aside>
+<nav class="mtop" id="mtop"><a href="#about">About</a><a href="#impact">Impact</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#cv">Experience</a><a href="#documents">Documents</a><a href="#teaching">Teaching</a><a href="#contact">Contact</a></nav>
+
+<main>
+  <header class="top">
+    <canvas id="cv"></canvas>
+    <div class="hero">
+      <div>
+        <div class="kick">Computer Vision · Medical Imaging · Interpretable AI</div>
+        <h2>Building <em>attention-driven</em> deep learning that helps clinicians see more clearly.</h2>
+        <p>Ph.D. researcher and university lecturer with more than five years of teaching, 25 peer-reviewed papers and 22 MS researchers supervised.</p>
+        <div class="actions"><a href="docs/Muhammad_Zaman_CV.pdf" class="btn btn-r" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a><a href="#publications" class="btn btn-l">Read publications</a><a href="#documents" class="btn btn-l">Verified documents</a></div>
+      </div>
+      <figure class="portrait"><img src="assets/img/portrait.jpg" alt="Portrait of Muhammad Zaman" width="760" height="1140"><figcaption><b>Muhammad Zaman</b>Lecturer &amp; PG Programs Coordinator</figcaption></figure>
+    </div>
+    <div class="statrow" id="stats"></div>
+  </header>
+
+  <div class="content">
+  <section id="about">
+    <div class="sh rv"><span class="no">01</span><h3>About</h3></div>
+    <div class="prose rv">
+      <p>I'm a Computer Science lecturer and AI researcher based in Pakistan. I teach machine learning, computer vision and image processing, and I supervise postgraduate research. My work spans deep learning for biomedical imaging, attention and transformer architectures, interpretable AI and quantum-enhanced computing.</p>
+      <p>My papers appear in IEEE, ACM, Springer and Elsevier venues, often as corresponding author. At Superior University I serve as Post-Graduate Programs Coordinator for Computer Science and Convener of the Departmental Research Ethics Committee, and I review for more than twenty international journals and conferences.</p>
+    </div>
+    <div class="chips rv"><span>IEEE Member since 2023</span><span>OBE curriculum design</span><span>Thesis supervision</span><span>Research ethics</span><span>Python · TensorFlow</span><span>C / C++</span><span>English (C1) · Urdu · Punjabi</span></div>
+  </section>
+
+  <section id="impact">
+    <div class="sh rv"><span class="no">02</span><h3>Research impact</h3><p>Citation indices from Google Scholar.</p></div>
+    <div class="impact rv">
+      <div class="panel">
+        <h4><span>Cited by</span><span>Updated <span id="asof"></span></span></h4>
+        <table class="ctable"><thead><tr><th></th><th>All</th><th>Since <span id="since"></span></th></tr></thead><tbody id="ctb"></tbody></table>
+      </div>
+      <div class="panel">
+        <h4><span>Citations per year</span><span id="ctot"></span></h4>
+        <div class="chart" id="chart"></div><div class="bars-x" id="barsx"></div>
+        <div class="src"><span>Source: Google Scholar profile</span><a id="gsl" target="_blank" rel="noopener">View on Google Scholar ↗</a></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="research">
+    <div class="sh rv"><span class="no">03</span><h3>Research interests</h3></div>
+    <div class="areas rv" id="areas"></div>
+  </section>
+
+  <section id="publications">
+    <div class="sh rv"><span class="no">04</span><h3>Publications</h3></div>
+    <div class="ptools rv" id="ptools"></div>
+    <div id="plist" class="rv"></div>
+  </section>
+
+  <section id="cv">
+    <div class="sh rv"><span class="no">05</span><h3>Experience &amp; education</h3></div>
+    <div class="rv"><div class="sub">Academic appointments</div><div id="exp"></div><div class="sub">Education</div><div id="edu"></div></div>
+  </section>
+
+  <section id="documents">
+    <div class="sh rv"><span class="no">06</span><h3>CV &amp; documents</h3><p>Official notifications and certificates, available to view or download.</p></div>
+    <div class="cvcard rv">
+      <img src="assets/thumbs/Muhammad_Zaman_CV.jpg" alt="First page of CV" width="120" height="155">
+      <div><h4>Curriculum Vitae</h4><p>Full academic CV with teaching, publications, supervision, service and memberships (10 pages, PDF).</p></div>
+      <div class="acts"><a class="dbtn" href="docs/Muhammad_Zaman_CV.pdf" target="_blank" rel="noopener">View</a><a class="dbtn dl" href="docs/Muhammad_Zaman_CV.pdf" download><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>Download CV</a></div>
+    </div>
+    <div class="docs" id="docs"></div>
+    <p class="note">References are available on request.</p>
+  </section>
+
+  <section id="teaching">
+    <div class="sh rv"><span class="no">07</span><h3>Teaching &amp; service</h3></div>
+    <div class="tgrid rv"><div class="tbox"><b>22</b><span>MS researchers supervised (15 completed)</span></div><div class="tbox"><b>12+</b><span>final-year &amp; AI projects supervised</span></div><div class="tbox"><b>21</b><span>international journals reviewed for</span></div></div>
+    <div class="two rv"><div><h4>Courses taught</h4><ul class="ul" id="courses"></ul></div><div><h4>Peer review</h4><ul class="ul" id="svc"></ul></div></div>
+  </section>
+
+  <section id="contact" style="border:0">
+    <div class="cbox rv">
+      <div><h3>Open to collaboration, postdoctoral roles and invited talks.</h3>
+      <p>The quickest way to reach me is by email.</p>
+      <div class="crow" id="crow"></div></div>
+      <div class="bw"><img src="assets/img/headshot.jpg" alt="" loading="lazy"></div>
+    </div>
+  </section>
+  <footer><span>© <span id="yr"></span> Muhammad Zaman</span><span>Sargodha · Lahore, Pakistan</span></footer>
+  </div>
+</main>
+</div>
+
+<script>
+const PROFILE = {
+  name: "Muhammad Zaman",
+  title: "Lecturer & AI Researcher",
+  tagline: "Building attention-driven, interpretable deep learning for medical imaging and computer vision.",
+  location: "Lahore / Sargodha, Pakistan",
+  email: "mzamancui@gmail.com",
+  phone: "+92 302 7324820",
+  summary: "University Lecturer and Ph.D. researcher in Computer Science with 5+ years of higher-education teaching. My research spans machine learning, deep learning, computer vision, biomedical imaging, attention and transformer methods, interpretable AI, and quantum-enhanced computing — published in IEEE, ACM, Springer and Elsevier venues.",
+  links: {
+    scholar: "https://scholar.google.com/citations?user=Jq-VN9kAAAAJ",
+    orcid: "https://orcid.org/0000-0001-6831-3589",
+    linkedin: "https://www.linkedin.com/in/muhammadzamancheema/",
+    github: "https://github.com/MuhammadZamanCheema021",
+    researchgate: "https://www.researchgate.net/profile/Muhammad-Zaman-43",
+    website: "https://www.dr-zaman.com/"
+  },
+  stats: [
+    { label: "Citations", value: 202 },
+    { label: "h-index", value: 8 },
+    { label: "Publications", value: 25 },
+    { label: "MS students supervised", value: 22 },
+    { label: "Journals reviewed for", value: 21 },
+    { label: "Years teaching", value: 6 }
+  ]
+};
+
+const RESEARCH = [
+  { t: "Medical Imaging AI", d: "Deep diagnostic models for TB, pneumonia, lung nodules, stroke, osteoporosis and diabetic foot ulcers from X-ray and MRI.", i: "◉" },
+  { t: "Attention & Transformers", d: "Self-attention, cross-attention and hybrid CNN–Transformer architectures (ViT, Swin, CoAtNet, SepViT).", i: "◈" },
+  { t: "Computer Vision", d: "Detection, segmentation, micro-expression recognition, DeepFake detection and sign-language recognition.", i: "◎" },
+  { t: "Interpretable AI", d: "Explainable, high-fidelity models for transparent clinical decision support.", i: "◇" },
+  { t: "Quantum Machine Learning", d: "Circuit-based error-corrected quantum CNNs for image classification and affective computing.", i: "⬡" },
+  { t: "Pattern Recognition", d: "Feature representation, classification and anomaly detection in high-dimensional data.", i: "▣" }
+];
+
+const PUBS = [
+  { y: 2026, t: "Self-attention–guided EfficientAttentionNet-B0 for robust and automated tuberculosis detection from chest X-ray images", v: "Array", q: "Q1", c: "Medical" },
+  { y: 2026, t: "Integrative Deep Diagnostic Architecture: A Convolutional Variational Attention Transformer for Personalized and Multi-Strategy Lung Nodule Detection", v: "IEEE Access", q: "Q1", c: "Medical" },
+  { y: 2026, t: "Attention-Enhanced Deep Learning Framework for Multiclass Pulmonary Disease Diagnosis Using Chest X-Ray Imaging", v: "Journal", q: "Q1", c: "Medical" },
+  { y: 2026, t: "BroadAttNet: Attention-Driven Micro-Expression Recognition", v: "CMC – Computers, Materials & Continua", q: "Q1", c: "Vision" },
+  { y: 2026, t: "Cascaded Cross-Attention Vision Transformers with Wavelet-Based Encodings for DeepFake Detection", v: "International Journal of Computer Vision", q: "Q1", c: "Vision" },
+  { y: 2026, t: "SepViT: A Dual-Path Transformer-Convolution Framework for Apex Frame-Based Microexpression Recognition", v: "IEEE Trans. Computational Social Systems", q: "Q1", c: "Vision" },
+  { y: 2025, t: "Flight into the Future: A Holistic Review of AI Trends, Vision, and Challenges in Drone Technology", v: "Artificial Intelligence Review", q: "Q1", c: "Review" },
+  { y: 2025, t: "Parameter Estimation of Weibull Distribution Using Constrained Search Space: An Application to Elevator Maintenance", v: "Machines", q: "Q2", c: "Review" },
+  { y: 2025, t: "Data-Efficient Wheat Disease Detection Using Shifted Window Transformer", v: "IEEE Trans. Consumer Electronics", q: "Q1", c: "Vision" },
+  { y: 2025, t: "Error-Corrected Quantum CNN for Gender-Based Micro-Expression Analysis in Affective Computing", v: "ICHORA", q: "Conf", c: "Quantum" },
+  { y: 2025, t: "Early Detection of Diabetic Foot Ulcers through CoAtNet Model", v: "ICHORA", q: "Conf", c: "Medical" },
+  { y: 2025, t: "A Novel Multi-Level Perceptron for Accurate Heart Stroke Diagnosis", v: "BIT & CS Journal", q: "Journal", c: "Medical" },
+  { y: 2025, t: "Micro-Expression Recognition Using Convolutional Variational Attention Transformer (ConVAT)", v: "IEEE Access", q: "Q1", c: "Vision" },
+  { y: 2025, t: "Convolutional Attention-Based Mechanism for Facial Microexpression Recognition", v: "IEEE Access", q: "Q1", c: "Vision" },
+  { y: 2024, t: "Efficient Detection of Knee Osteoporosis Using Swin Transformer on X-Ray Images", v: "ICCA", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Enhanced Pediatric Pneumonia Diagnosis with Chest X-Ray Using Deep Attention Mechanism", v: "IEEE/ACM BDCAT", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Optimizing Diabetic Foot Ulcer Detection: Leveraging SSD and YOLO Architectures", v: "IEEE Smart Communities", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Enhancing Micro-Expression Recognition with Broadbent Attention Mechanism", v: "IEEE Smart Communities", q: "Conf", c: "Vision" },
+  { y: 2024, t: "EQCNN: Enhanced Remote Sensing Imagery Classification with Circuit-Based Error-Corrected Quantum CNNs", v: "DICTA", q: "Conf", c: "Quantum" },
+  { y: 2024, t: "Enhanced and Interpretable Brain Stroke Detection with High Accuracy Using ViT B-16 Model", v: "ICIC", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Enhanced Sign Language Detection with Deep CNN", v: "ICIC", q: "Conf", c: "Vision" },
+  { y: 2024, t: "A Hybrid Approach for Tuberculosis Detection Using Convolutional Attention Networks and XGBoost", v: "ICIC", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Ensemble Learning for Breast Cancer Detection: A High-Accuracy Model Integrating Clinical Insights", v: "ICIC", q: "Conf", c: "Medical" },
+  { y: 2024, t: "An Efficient Arthritis Diagnostic Model Using CoAtNet", v: "ICIC", q: "Conf", c: "Medical" },
+  { y: 2024, t: "Across the Spectrum: An In-Depth Review of AI-Based Models for Phishing Detection", v: "IEEE Open Journal of the Communications Society", q: "Q1", c: "Review" }
+];
+
+const EXPERIENCE = [
+  { p: "Oct 2024 — Present", r: "Lecturer", o: "Superior University, Sargodha Campus", d: "Teaches AI, ML, Computer Vision and Image Processing at UG/PG level. Post-Graduate Programs Coordinator (CS), Convener of the Departmental Research Ethics Committee, Student Success Advisor and SVL Advisor. Supervises MS theses and FYPs from problem formulation to publication." },
+  { p: "Oct 2023 — Sep 2024", r: "Lecturer", o: "The University of Lahore, Sargodha Campus", d: "Taught AI, ML, CV, Algorithms and Programming Languages. Batch Head (BSCS) and member of departmental research, admission and event committees; built OBE-aligned curricula, labs and advising systems." },
+  { p: "Jul 2020 — Jul 2023", r: "Lecturer", o: "Falah Institute of Nursing & Allied Health Sciences, Rawalpindi", d: "Programming, Operating Systems, Web Development and Databases. Contributed to QEC, ORIC and Admissions; Assistant to the Dean." }
+];
+
+const EDUCATION = [
+  { p: "2025 — 2028 (exp.)", r: "Ph.D. Computer Science", o: "The Superior University, Lahore", d: "Supervisor: Prof. Dr. Muhammad Waseem Iqbal · GPA 3.80/4.00" },
+  { p: "2021 — 2023", r: "MS Computer Science", o: "COMSATS University Islamabad", d: "Thesis: Circuit-Based Error Detection and Correction Scheme for Quantum Systems" },
+  { p: "2017 — 2019", r: "MCS Computer Science", o: "Islamia University, Bahawalpur", d: "Thesis: Intelligent System for Automated Medical Image Diagnostics" }
+];
+
+const SERVICE = [
+  "IEEE Trans. Information Forensics & Security", "IEEE Trans. Vehicular Technology", "IEEE Trans. Intelligent Transportation Systems",
+  "IEEE Trans. Dependable & Secure Computing", "IEEE Trans. Industrial Electronics", "IEEE Communications Magazine",
+  "IEEE Communications Letters", "Information Fusion (Elsevier)", "Information Sciences (Elsevier)", "Computer Networks (Elsevier)",
+  "Ad Hoc Networks (Elsevier)", "JNCA (Elsevier)", "Computer Communications (Elsevier)", "Telecommunication Systems (Springer)", "IET Security"
+];
+
+const PROJECTS = [
+  "NeuroScan — Brain Tumor Detection", "RetinaGuard — Diabetic Retinopathy", "CancerVision — Cancer Detection",
+  "ThoraxScan — Chest Disease Detection", "SignAI — Sign Language Recognition", "AgroAI — Smart Agriculture",
+  "CrowdWatch — Crowd Analysis", "FraudShield — Fraud Detection", "Job Prep AI — NLP Career Assistant", "Eduverse ERP — AI Academic Portal"
+];
+
+const COURSES = ["Artificial Intelligence", "Machine Learning", "Computer Vision", "Digital Image Processing", "Advanced Operating Systems", "Advanced Algorithm Analysis", "Theory of Programming Languages", "OOP (C++)", "Web Development", "Database Systems", "Research Methods"];
+
+const SCHOLAR = { citations: 202, h: 8, i10: 6, since: 2021, perYear: [{ y: 2025, v: 76 }, { y: 2026, v: 125 }], asOf: "November 2026" };
+const DOCS = [
+  { f: "PG_Programs_Coordinator_CS_Mar2026", t: "Post-Graduate Programs Coordinator, Computer Science", o: "Superior University, Office of the Registrar", d: "11 March 2026", k: "Appointment" },
+  { f: "DREC_Convener_Feb2026", t: "Convener, Departmental Research Ethics Committee (CS & IT)", o: "Superior University, Office of the Registrar", d: "26 February 2026", k: "Appointment" },
+  { f: "INCOSST2026_Reviewer_Certificate", t: "Reviewer certificate, INCOSST 2026 (3 manuscripts)", o: "International Conference on Smart Science & Technology", d: "8 August 2026", k: "Certificate" },
+  { f: "Student_Success_Advisor_Jun2026", t: "Student Success Advisor, CS & IT batches", o: "Superior University, Office of the Registrar", d: "8 June 2026", k: "Appointment" },
+  { f: "SVL_Advisor_Jan2026", t: "Departmental Advisor, Student Voice Leaders", o: "Superior University, Office of the Registrar", d: "6 January 2026", k: "Appointment" },
+  { f: "eSports_Society_Advisor_Feb2026", t: "Advisor, e-Sports Society", o: "Superior University, Office of the Registrar", d: "20 February 2026", k: "Appointment" },
+  { f: "Election_Commission_Presiding_Officer_Jan2026", t: "Presiding Officer, Student Body Election Commission 2026", o: "Superior University, Office of the Registrar", d: "5 January 2026", k: "Appointment" },
+  { f: "Campus_Discipline_Committee_Apr2025", t: "Member, Campus Discipline Committee", o: "Superior University, Office of the Registrar", d: "25 April 2025", k: "Appointment" }
+];
+
+document.documentElement.classList.add('js');
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const DL='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 19h16"/></svg>';
+$('#yr').textContent=new Date().getFullYear();$('#smail').textContent=PROFILE.email;
+$('#slinks').innerHTML=[['Google Scholar','scholar'],['ORCID','orcid'],['ResearchGate','researchgate'],['LinkedIn','linkedin'],['GitHub','github']].map(([k,v])=>`<a href="${PROFILE.links[v]}" target="_blank" rel="noopener">${k}</a>`).join('');
+$('#stats').innerHTML=[['Citations',SCHOLAR.citations],['h-index',SCHOLAR.h],['i10-index',SCHOLAR.i10],['Publications',PUBS.length]].map(([l,v])=>`<div><b data-n="${v}">0</b><span>${l}</span></div>`).join('');
+// impact
+$('#asof').textContent=SCHOLAR.asOf;$('#since').textContent=SCHOLAR.since;$('#gsl').href=PROFILE.links.scholar;
+$('#ctb').innerHTML=[['Citations',SCHOLAR.citations],['h-index',SCHOLAR.h],['i10-index',SCHOLAR.i10]].map(([k,v])=>`<tr><td>${k}</td><td>${v}</td><td>${v}</td></tr>`).join('');
+$('#ctot').textContent=SCHOLAR.citations+' total';
+const mx=140;$('#chart').innerHTML=SCHOLAR.perYear.map(p=>`<div class="bar"><i data-h="${p.v/mx*100}"></i></div>`).join('');
+$('#barsx').innerHTML=SCHOLAR.perYear.map(p=>`<span>${p.y}</span>`).join('');
+$('#areas').innerHTML=RESEARCH.map((r,i)=>`<div class="area"><div class="n">0${i+1}</div><h4>${r.t}</h4><p>${r.d}</p></div>`).join('');
+const cv=x=>`<div class="cvi"><time>${x.p}</time><div><h5>${x.r}</h5><h6>${x.o}</h6><p>${x.d}</p></div></div>`;
+$('#exp').innerHTML=EXPERIENCE.map(cv).join('');$('#edu').innerHTML=EDUCATION.map(cv).join('');
+$('#docs').innerHTML=DOCS.map(d=>`<article class="doc"><a class="th" href="docs/${d.f}.pdf" target="_blank" rel="noopener"><img src="assets/thumbs/${d.f}.jpg" alt="First page: ${d.t}" loading="lazy"></a><div><div class="k">${d.k}</div><h5>${d.t}</h5><small>${d.o}<br>${d.d}</small><div class="acts"><a class="dbtn" href="docs/${d.f}.pdf" target="_blank" rel="noopener">View</a><a class="dbtn dl" href="docs/${d.f}.pdf" download>${DL}PDF</a></div></div></article>`).join('');
+$('#courses').innerHTML=COURSES.map(c=>`<li>${c}</li>`).join('');
+$('#svc').innerHTML=['INCOSST 2026: Technical Program Committee reviewer',...SERVICE.slice(0,10)].map(c=>`<li>${c}</li>`).join('')+`<li style="color:var(--red)">and ${SERVICE.length-10} more journals</li>`;
+$('#crow').innerHTML=[['Email',PROFILE.email],['Phone',PROFILE.phone]].map(([k,v])=>`<div class="item"><span><span style="color:var(--lmut)">${k}:</span> ${v}</span><button class="copy" data-v="${v}">Copy</button></div>`).join('')+`<a class="btn btn-r" href="docs/Muhammad_Zaman_CV.pdf" download>${DL}CV</a>`;
+$('#crow').onclick=async e=>{const b=e.target.closest('.copy');if(!b)return;try{await navigator.clipboard.writeText(b.dataset.v);b.textContent='Copied ✓'}catch(_){b.textContent='Select to copy'}setTimeout(()=>b.textContent='Copy',1800)};
+// publications
+const tabs=[['All','All'],['Medical','Medical imaging'],['Vision','Computer vision'],['Quantum','Quantum ML'],['Review','Other']];let cat='All',q='';
+$('#ptools').innerHTML=tabs.map(([c,l])=>`<button class="tab ${c==='All'?'on':''}" data-c="${c}">${l}</button>`).join('')+'<input id="q" placeholder="Search publications" aria-label="Search publications">';
+function rp(){const L=PUBS.filter(p=>(cat==='All'||p.c===cat)&&(!q||(p.t+' '+p.v).toLowerCase().includes(q)));const ys=[...new Set(L.map(p=>p.y))];
+  $('#plist').innerHTML=ys.map(y=>`<div class="ygroup"><h4>${y}</h4><div>${L.filter(p=>p.y===y).map(p=>`<div class="pi"><h5>${p.t}</h5><div class="meta"><i>${p.v}</i><span class="qb ${p.q==='Q1'?'q1':''}">${p.q==='Conf'?'Conference':p.q}</span></div></div>`).join('')}</div></div>`).join('')||'<p class="empty">No publications match your search.</p>';}
+rp();$('#ptools').onclick=e=>{const b=e.target.closest('.tab');if(!b)return;cat=b.dataset.c;$$('.tab').forEach(x=>x.classList.toggle('on',x===b));rp()};
+$('#q').oninput=e=>{q=e.target.value.trim().toLowerCase();rp()};
+// motion
+addEventListener('load',()=>document.body.classList.add('loaded'));setTimeout(()=>document.body.classList.add('loaded'),900);
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(!e.isIntersecting)return;e.target.classList.add('in');e.target.querySelectorAll('[data-h]').forEach((b,i)=>setTimeout(()=>b.style.height=b.dataset.h+'%',250+i*200));io.unobserve(e.target)}),{threshold:.1});
+$$('.rv').forEach(e=>io.observe(e));
+setTimeout(()=>$$('[data-n]').forEach(b=>{const n=+b.dataset.n,t0=performance.now();(function s(t){const k=Math.min((t-t0)/1500,1);b.textContent=Math.round(n*(1-Math.pow(1-k,3)));k<1&&requestAnimationFrame(s)})(t0)}),300);
+const secs=[...$$('section[id]')];
+addEventListener('scroll',()=>{let c='';secs.forEach(s=>{if(scrollY>=s.offsetTop-160)c=s.id});$$('#snav a,#mtop a').forEach(a=>a.classList.toggle('on',a.getAttribute('href')==='#'+c));const on=$('#mtop a.on');if(on&&getComputedStyle($('#mtop')).display!=='none'){const m=$('#mtop');m.scrollLeft=on.offsetLeft-m.clientWidth/2+on.offsetWidth/2}},{passive:true});
+// Inside the Claude preview, route download buttons through its save dialog. On GitHub Pages this does nothing and normal downloads apply.
+(async()=>{if(!window.claude||typeof claude.use!=='function')return;let dl=null;try{dl=await claude.use('downloads')}catch(_){}if(!dl)return;
+ document.addEventListener('click',async e=>{const a=e.target.closest('a[download]');if(!a)return;e.preventDefault();
+  try{const r=await fetch(a.getAttribute('href'));if(!r.ok)throw 0;await dl.save({filename:a.getAttribute('href').split('/').pop(),data:await r.blob()})}
+  catch(err){if(!err||err.code!=='declined')window.open(a.href,'_blank')}},true)})();
+// node field
+const c=$('#cv'),x=c.getContext('2d');let W,H,P;const dpr=Math.min(devicePixelRatio,2),still=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function rs(){W=c.width=c.offsetWidth*dpr;H=c.height=c.offsetHeight*dpr;P=Array.from({length:Math.round(W*H/(26000*dpr*dpr))},()=>({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.25*dpr,vy:(Math.random()-.5)*.25*dpr}))}
+rs();addEventListener('resize',rs);
+(function f(){x.clearRect(0,0,W,H);const D=120*dpr;for(const p of P){if(!still){p.x+=p.vx;p.y+=p.vy}if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}
+ for(let i=0;i<P.length;i++)for(let j=i+1;j<P.length;j++){const d=Math.hypot(P[i].x-P[j].x,P[i].y-P[j].y);if(d<D){x.strokeStyle=`rgba(224,32,27,${(1-d/D)*.35})`;x.lineWidth=dpr*.6;x.beginPath();x.moveTo(P[i].x,P[i].y);x.lineTo(P[j].x,P[j].y);x.stroke()}}
+ x.fillStyle='rgba(255,255,255,.5)';for(const p of P){x.beginPath();x.arc(p.x,p.y,1.3*dpr,0,7);x.fill()}if(!still)requestAnimationFrame(f)})();
+</script>
+</body>
+</html>
